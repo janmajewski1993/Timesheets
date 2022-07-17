@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Timesheets</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inter&family=Lato&family=Roboto&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+		<script
+			src="https://kit.fontawesome.com/eeec7a3436.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="./scripts/scripts.js" defer></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<!-- FORM -->
+			<form class="form">
+				<div class="login">
+					<div class="login__logo">
+						<img
+							src="./img/logo/Time-removebg-preview.png"
+							alt="logo at the start of the page"
+							class="login__img"
+						/>
+					</div>
+					<div class="login__greetings">Welcome to Timesheets!</div>
+					<div class="login__spacer" aria-hidden="true"></div>
+					<div class="login__username">
+						<label class="login__text">Username</label>
+						<input
+							id="username"
+							type="text"
+							class="login__input"
+							placeholder="Enter your username..."
+						/>
+					</div>
+					<div class="login__password">
+						<label class="login__text">Password</label>
+						<input
+							id="password"
+							type="password"
+							class="login__input"
+							placeholder="Enter your password..."
+						/>
+					</div>
+					<div class="login__info"></div>
+					<div class="login__spacer" aria-hidden="true"></div>
+					<button class="login__button">Log in</button>
+					<div class="login__greetings login__greetings--down">
+						Have a nice day!
+					</div>
+				</div>
+				<img class="img-report" src="./img/report-svg.svg" alt="" />
+				<img class="img-clock" src="./img/clock-svg.svg" alt="" />
+			</form>
+			<!-- MOBILE HEADER -->
+			<header class="header">
+				<a href="#startPage" class="header__logo"
+					><img
+						src="./img/logo/Time-removebg-preview.png"
+						alt="logo"
+						class="header__img"
+				/></a>
+				<div class="header__text"></div>
+				<div class="header__menu">
+					<div class="header__line"></div>
+				</div>
+			</header>
+			<!-- MOBILE NAV -->
+			<nav class="nav">
+				<div class="nav__box">
+					<a href="#users" class="nav__box-button">
+						<div class="nav__box-icon"><i class="fa-solid fa-user"></i></div>
+						<div class="nav__box-text">Users</div>
+					</a>
+					<a href="#worktime" class="nav__box-button">
+						<div class="nav__box-icon">
+							<i class="fa-solid fa-clock"></i>
+						</div>
+						<div class="nav__box-text">Worktime</div>
+					</a>
+					<a href="#calendar" class="nav__box-button">
+						<div class="nav__box-icon">
+							<i class="fa-solid fa-calendar-days"></i>
+						</div>
+						<div class="nav__box-text">Calendar</div>
+					</a>
+					<a href="#vacations" class="nav__box-button">
+						<div class="nav__box-icon">
+							<i class="fa-solid fa-plane-departure"></i>
+						</div>
+						<div class="nav__box-text">Vacations</div>
+					</a>
+					<a href="#delegations" class="nav__box-button">
+						<div class="nav__box-icon">
+							<i class="fa-solid fa-suitcase"></i>
+						</div>
+						<div class="nav__box-text">Delegations</div>
+					</a>
+					<a href="#raports" class="nav__box-button">
+						<div class="nav__box-icon">
+							<i class="fa-solid fa-clipboard"></i>
+						</div>
+						<div class="nav__box-text">Raports</div>
+					</a>
+					<a href="#helpdesk" class="nav__box-button">
+						<div class="nav__box-icon">
+							<i class="fa-solid fa-circle-question"></i>
+						</div>
+						<div class="nav__box-text">Helpdesk</div>
+					</a>
+					<button id="logout" class="nav__box-button">
+						<div class="nav__box-icon">
+							<i class="fa-solid fa-power-off"></i>
+						</div>
+						<div class="nav__box-text nav__box-text--user"></div>
+					</button>
+				</div>
+			</nav>
+			<main class="main">
+				<!-- STARTING PAGE -->
+				<section id="startPage" class="startPage">
+					<div class="startPage__greetings">
+						<div class="startPage__header"></div>
+						<div class="startPage__text"></div>
+					</div>
+					<div class="startPage__calendar">
+						<div class="startPage__day"></div>
+						<div class="startPage__hour"></div>
+						<div class="startPage__task"></div>
+						<div class="startPage__hour startPage__hour--8"></div>
+						<div class="startPage__task startPage__task--8"></div>
+						<div class="startPage__hour startPage__hour--9"></div>
+						<div class="startPage__task startPage__task--9"></div>
+						<div class="startPage__hour startPage__hour--10"></div>
+						<div class="startPage__task startPage__task--10"></div>
+						<div class="startPage__hour startPage__hour--11"></div>
+						<div class="startPage__task startPage__task--11"></div>
+						<div class="startPage__hour startPage__hour--12"></div>
+						<div class="startPage__task startPage__task--12"></div>
+						<div class="startPage__hour startPage__hour--13"></div>
+						<div class="startPage__task startPage__task--13"></div>
+						<div class="startPage__hour startPage__hour--14"></div>
+						<div class="startPage__task startPage__task--14"></div>
+						<div class="startPage__hour startPage__hour--15"></div>
+						<div class="startPage__task startPage__task--15"></div>
+						<div class="startPage__hour startPage__hour--16"></div>
+						<div class="startPage__task startPage__task--16"></div>
+						<div class="startPage__hour startPage__hour--17"></div>
+						<div class="startPage__task startPage__task--17"></div>
+					</div>
+					<div class="startPage__clock">
+						<div class="startPage__date"></div>
+						<div class="startPage__time"></div>
+					</div>
+					<div class="startPage__weather"></div>
+				</section>
+				<section id="users" class="users">
+					<div class="users__list"></div>
+				</section>
+				<section id="worktime" class="worktime"></section>
+				<section id="calendar" class="calendar"></section>
+				<section id="vacations" class="vacations"></section>
+				<section id="delegations" class="delegations"></section>
+				<section id="raports" class="raports"></section>
+				<section id="helpdesk" class="helpdesk"></section>
+			</main>
+		</div>
+	</body>
+</html>
